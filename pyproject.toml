@@ -6,7 +6,7 @@ authors = ["Alejandro Prieto <alejandro.prieto@ailylabs.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.10.0"
+python = ">=3.10,<4.0"
 jupyter-client = "^8.1.0"
 jupyter-core = "^5.3.0"
 ipykernel = "^6.15.0"
@@ -20,7 +20,12 @@ kaggle = "^1.5.13"
 numpy = "^1.23.5"
 imblearn = "*"
 virtualenv = "*"
+evidently = "^0.4.25"
+jupyter = "^1.0.0"
 
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "^70.0.0"
 
 [build-system]
 requires = ["poetry-core"]
